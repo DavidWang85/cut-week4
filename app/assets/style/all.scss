@@ -61,6 +61,7 @@
     a {
       color: $light;
       font-size: 20px;
+      font-weight: bold;
       line-height: 1.5;
       &:hover {
         opacity: 0.8;
@@ -153,8 +154,9 @@
     display: none;
     @include mobile{
       display: flex;
-      margin-left: 24px;
-      background: green;
+      li{
+        margin-left: 24px;
+      }
     }
   }
 }
@@ -193,6 +195,171 @@
     @include mobile{
       margin-left: 0;
       margin-bottom: 8px;
+    }
+  }
+}
+
+
+// index_html
+.banner{
+  display: block;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+  background-position: center;
+  background-size: cover;
+  padding: 350px 0;
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  @include pad{
+    padding: 370px 0;
+  }
+  @include mobile{
+    padding: 150px 0;
+  }
+}
+.index_title{
+  font-size: 64px;
+  font-weight: bold;
+  color: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 15px;
+  span{
+    font-size: 36px;
+    font-weight: normal;
+  }
+  @include pad{
+    font-size: 48px;
+    span{
+      font-size: 20px;
+    }
+  }
+  @include mobile{
+    font-size: 32px;
+    span{
+      font-size: 16px;
+    }
+  }
+}
+.services{
+  background: $info;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+  &_title{
+    font-size: 48px;
+    color: $secondary;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  @include pad{
+    padding-top: 40px;
+    padding-bottom: 56px;
+    &_title{
+      font-size: 32px;
+    }
+  }
+  @include mobile{
+    padding-top: 32px;
+    padding-bottom: 40px;
+    &_title{
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
+  }
+}
+.services_list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include pad{
+    padding: 0 36px;
+  }
+  @include mobile{
+    justify-content: center;
+  }
+}
+.services_card{
+  width: 23%;
+  text-align: center;
+  &_img{
+    width: 84px;
+    height: 84px;
+    margin-bottom: 24px;
+  }
+  &_title{
+    color: $secondary;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  &_body{
+    text-align: left;
+  }
+  @include pad{
+    width: 40%;
+    margin-bottom: 44px;
+  }
+  @include mobile{
+    width: 90%;
+  }
+}
+.class{
+  padding-top: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include pad{
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+}
+.class_title{
+  font-size: 48px;
+  font-weight: bold;
+  color: $secondary;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.class_card{
+  margin-bottom: 32px;
+  &_img{
+    max-width: 58%;
+    height: auto;
+  }
+  &_title{
+    font-size: 48px;
+    font-weight: bold;
+    color: $primary;
+  }
+  &_icon{
+    width: 48px;
+    height: 48px;
+  }
+  @include pad{
+    flex-direction: row;
+    margin-bottom: 8px;
+    &_img{
+      margin-right: 32px;
+    }
+    &_title{
+      font-size: 28px;
+    }
+    &_icon{
+      width: 36px;
+      height: 36px;
+    }
+  }
+  @include mobile{
+    flex-direction: column;
+    &_img{
+      position: relative;
+    }
+    &_title{
+      position: absolute;
     }
   }
 }

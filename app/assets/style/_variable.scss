@@ -1,7 +1,9 @@
 //變數
 
 // colors
-$primary: #AA0601;
+$primary: #aa0601;
+$secondary: #650300;
+$info: #FBF2F2;
 $dark: #000;
 $light: #FBF2F2;
 
@@ -9,4 +11,27 @@ $light: #FBF2F2;
 //spacing
 .mb-4{
     margin-bottom: 16px;
+}
+.mb-6{
+    margin-bottom: 24px;
+}
+.mr-2{
+    margin-right: 8px;
+}
+.mr-5{
+    margin-right: 20px;
+}
+.mr-8{
+    margin-right: 32px;
+}
+
+
+.d-flex{
+    display: flex;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.align-item-center{
+    align-items: center;
 }
