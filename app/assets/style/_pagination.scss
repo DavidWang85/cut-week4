@@ -1,0 +1,45 @@
+.pages{
+    width: 32%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+    a{
+      display: block;
+      color: #555555;
+      padding: 12px;
+      &:hover{
+        background: #94939317;
+      }
+    }
+    .active{
+      color: #ffff;
+      background: #000;
+      &:hover{
+        background: #000;
+      }
+    }
+    &-prev{
+      border: 1px solid #555555;
+      border-right: none;
+      text-align: center;
+    }
+    &-number{
+      border: 1px solid #555555;
+      border-right: none;
+      text-align: center;
+    }
+    &-next{
+      border: 1px solid #555555;
+      text-align: center;
+    }
+    @include pad{
+      width: 51%;
+      margin-bottom: 96px;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: 56px;
+      justify-content: space-between;
+    }
+  }

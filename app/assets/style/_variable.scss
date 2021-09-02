@@ -6,6 +6,7 @@ $secondary: #650300;
 $info: #FBF2F2;
 $dark: #000;
 $light: #FBF2F2;
+$shadow: #DEE2E6;
 
 
 //spacing
@@ -25,7 +26,7 @@ $light: #FBF2F2;
     margin-right: 32px;
 }
 
-
+// flex
 .d-flex{
     display: flex;
 }
@@ -35,3 +36,21 @@ $light: #FBF2F2;
 .align-item-center{
     align-items: center;
 }
+// bd
+.border{
+    width: 100%;
+    border: 1px solid #000;
+}
+.border_left{
+    border-left: 1px solid #DCDCDC;
+}
+.border_right{
+    border-right: 1px solid #DCDCDC;
+}
+.border_bottom{
+    border-bottom: 4px solid $primary;
+}
+.border_bottom_transparent{
+    border-bottom: 4px solid transparent;
+}
+

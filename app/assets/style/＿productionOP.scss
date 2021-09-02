@@ -1,0 +1,189 @@
+// productionOP頁面
+
+.optical{
+    &_nav{
+      display: flex;
+    }
+    &_item{
+      width: 33.3%;
+      display: flex;
+      justify-content: center;
+    }
+    &_link{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 92px;
+      color: $dark;
+      &_img{
+        width: 44px;
+        height: 44px;
+      }
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+    &_text{
+      font-size: 32px;
+      margin-left: 8px;
+    }
+    @include pad{
+      &_link{
+        padding: 16px 48px;
+        &_img{
+          width: 28px;
+          height: 28px;
+        }
+      }
+      &_text{
+        font-size: 24px;
+        margin-left: 8px;
+      }
+    }
+    @include mobile{
+      &_link{
+        padding: 8px 20px;
+        &_img{
+          width: 12px;
+          height: 12px;
+        }
+      }
+      &_text{
+        font-size: 12px;
+        margin-left: 2px;
+      }
+    }
+  }
+  .optical_banner{
+    display: flex;
+    margin-bottom: 80px;
+    li{
+      width: 50%;
+      height: 304px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    @include pad{
+      margin-bottom: 56px;
+    }
+    @include mobile{
+      margin-bottom: 32px;
+      li{
+        height: 148px;
+      }
+    }
+  }
+  .celluloidglass{
+    text-align: center;
+    h2{
+      font-size: 40px;
+      line-height: 1.5;
+    }
+    h3{
+      font-size: 30px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    @include pad{
+      display: none;
+    }
+  }
+  .celluloidglass_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .celluloidglass_card{
+    width: 23%;
+    margin-bottom: 104px;
+    @include pad{
+      width: 48%;
+      margin-bottom: 72px;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+  .celluloidglass_card_img{
+    width: 100%;
+    height: 164px;
+    object-fit: cover;
+  }
+  .celluloidglass_card_body{
+    display: flex;
+    justify-content: space-between;
+  }
+  .products-name{
+    font-size: 24px;
+  }
+  .products-price{
+    font-size: 24px;
+    color: $primary;
+  }
+  .celluloidglass_card_footer{
+    display: flex;
+  }
+  .products-style-dark{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: #5F3E2D;
+    margin-right: 8px;
+  }
+  .products-style-light{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: #B75929;
+  }
+  
+  /*celluloidglass PAD版*/
+  .celluloidglass-pad{
+    display: none;
+    @include pad{
+      padding: 0 15px;
+      display: contents;
+      text-align: center;
+      h2{
+        font-size: 32px;
+        line-height: 1.5;
+      }
+      h3{
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+    }
+    @include mobile{
+      display: none;
+    }
+  }
+  /*celluloidglass mobile版*/
+  .celluloidglass-mobile{
+    display: none;
+    @include pad{
+      display: none;
+    }
+    @include mobile{
+      padding: 0 15px;
+      display: contents;
+      text-align: center;
+      h2{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      h3{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    }
+  }
